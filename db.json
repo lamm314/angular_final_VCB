@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "id": "lamee1234",
+      "name": "Lamm",
+      "password": "Lienminh1@",
+      "email": "nguyenduc.lamm3.14@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "lamee123411",
+      "name": "Nguyễn Đức Lâm",
+      "password": "Lienminh1@",
+      "email": "nguyenduc.lamm3.14@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "Admin User",
+      "password": "123456789",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "admin123",
+      "name": "Nguyễn Đức Lâm",
+      "password": "123456789",
+      "email": "nguyenduc.lamm3.14@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    }
+  ]
+}
