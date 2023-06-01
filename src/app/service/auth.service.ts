@@ -14,14 +14,32 @@ export class AuthService {
   GetAll(){
     return this.http.get(this.apiurl);
   }
+
+
   Getbycode(code:any){
     return this.http.get(this.apiurl + '/' + code);
 
+  }
+
+  GetAllRole(){
+    return this.http.get('http://localhost:3000/role');
   }
   Proceedregister(inputdata:any){
     return this.http.post(this.apiurl,inputdata);
   }
   Updateuser(code:any,inputdata: any){
     return this.http.put(this.apiurl+'/'+code, inputdata);
+  }
+  IsloggedIn(){
+    return sessionStorage.getItem('username')!=null;
+  }
+  GetUserrole(){
+    return sessionStorage.getItem('role')!=null?sessionStorage.getItem('role')?.toString():'';
+  }
+  GetAllCustomer(){
+    return this.http.get('http://localhost:3000/customer');
+  }
+  Getaccessbyrole(role:any,menu:any){
+    return this.http.get('http://localhost:3000/roleaccess?role='+role+'&menu='+menu)
   }
 }

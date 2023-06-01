@@ -6,7 +6,7 @@
       "password": "Lienminh1@",
       "email": "nguyenduc.lamm3.14@gmail.com",
       "gender": "male",
-      "role": "",
+      "role": "admin",
       "isactive": true
     },
     {
@@ -15,7 +15,7 @@
       "password": "Lienminh1@",
       "email": "nguyenduc.lamm3.14@gmail.com",
       "gender": "male",
-      "role": "",
+      "role": "Quality",
       "isactive": true
     },
     {
@@ -33,8 +33,139 @@
       "password": "123456789",
       "email": "nguyenduc.lamm3.14@gmail.com",
       "gender": "male",
-      "role": "",
+      "role": "tech",
       "isactive": true
+    },
+    {
+      "id": "admin1111",
+      "name": "Lâm Lâm",
+      "password": "123456789",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "tech",
+      "isactive": true
+    },
+    {
+      "id": "admin@1",
+      "name": "Admin",
+      "password": "Lienminh1@",
+      "email": "test1@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "Staff",
+      "name": "Staff"
+    },
+    {
+      "code": "Quality",
+      "name": "Quality"
+    },
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "tech",
+      "menu": "customer",
+      "haveedit": false,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Lamee",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "Lamee",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 3,
+      "name": "Lamee",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "Lamee",
+      "Creditlimit": 1000
+    }
+  ],
+  "company": [
+    {
+      "name": "NT Infotech pvt ltd",
+      "empcount": "55",
+      "revenue": "25000",
+      "address": "1st street\nchennai\npin 600048",
+      "isactive": true,
+      "id": 2
+    },
+    {
+      "name": "NT Infotech",
+      "empcount": "1000",
+      "revenue": "2000",
+      "address": "test",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "name": "DMC",
+      "empcount": "60",
+      "revenue": "1000",
+      "address": "Kim Ma, Ba Dinh\n",
+      "isactive": true,
+      "id": 8
     }
   ]
 }

@@ -10,7 +10,6 @@ import {MatDialogModule} from "@angular/material/dialog"
 import {MatSelectModule} from "@angular/material/select"
 import {MatCheckboxModule} from "@angular/material/checkbox"
 
-
 @NgModule({
     exports: [
         MatInputModule,
@@ -22,6 +21,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox"
         MatDialogModule,
         MatSelectModule,
         MatCheckboxModule
+
     ]
 })
 export class MaterialModule { }

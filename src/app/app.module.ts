@@ -12,6 +12,8 @@ import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { MaterialModule } from 'src/material.module';
 import { ReactiveFormsModule } from '@angular/forms'
 import { ToastrModule } from 'ngx-toastr';
+import { PopupComponent } from './popup/popup.component';
+import { CompanyComponent } from './company/company.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +22,10 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     UserlistingComponent,
     UpdatepopupComponent,
+    PopupComponent,
+    CompanyComponent
 
   ],
-
-
   imports: [
     BrowserModule,
     AppRoutingModule,
